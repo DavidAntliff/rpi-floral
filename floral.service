@@ -1,0 +1,12 @@
+[Unit]
+Description=Floral service
+
+[Service]
+WorkingDirectory=/home/pi/rpi-floral
+User=pi
+ExecStart=/home/pi/rpi-floral/start-floral.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
